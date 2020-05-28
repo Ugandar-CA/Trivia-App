@@ -31,8 +31,8 @@ public class QuestionBank {
                             try {
                                 questionModel.setQuestions(response.getJSONArray(i).get(0).toString());
                                 questionModel.setTrueOrFalse(response.getJSONArray(i).getBoolean(1));
-//                                Log.i("Json","onResponse"+ response.getJSONArray(i).get(0));
-//                                Log.i("json boolean","onResponse"+ response.getJSONArray(i).getBoolean(1));
+                                Log.i("Json","onResponse"+ response.getJSONArray(i).get(0));
+                                Log.i("json boolean","onResponse"+ response.getJSONArray(i).getBoolean(1));
                                 questionArrayList.add(questionModel);
                                 Log.d("hello", "onResponse: " +questionModel);
                             } catch (JSONException e) {
